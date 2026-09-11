@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PristineAI — a read on your skin, and a plan</title>
+<meta name="description" content="PristineAI looks at a photo of your face and gives you a plain-language skin assessment, matched product suggestions, and a routine you can actually keep." />
+<link rel="canonical" href="{{SITE_URL}}/" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<meta property="og:title" content="PristineAI" />
+<meta property="og:description" content="A read on your skin, and a plan to improve it over time." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{SITE_URL}}/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container container--wide site-header__inner">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--primary)"/><path d="M16 6c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11Z" fill="var(--on-primary)"/></svg>
+      PristineAI
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container container--wide">
+      <div class="hero__grid">
+        <div>
+          <h1 class="reveal">A read on your skin, and a plan.</h1>
+          <p class="hero__lede reveal">
+            PristineAI looks at a photo of your face and gives you a plain-language
+            assessment, product suggestions matched to what it sees, and a daily
+            routine you can keep track of.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="{{APP_STORE_URL}}">Download on the App Store</a>
+            <a class="btn" href="#how">How it works</a>
+          </div>
+        </div>
+        <div class="hero__art reveal" role="img" aria-label="Abstract soft gradient artwork"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="container container--wide">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step__num" aria-hidden="true"></span>
+          <h3>Take a photo</h3>
+          <p>
+            Point the camera at your face in good light. The photo is sent over an
+            encrypted connection for analysis and is not stored on our servers.
+          </p>
+        </div>
+        <div class="step">
+          <span class="step__num" aria-hidden="true"></span>
+          <h3>Get your assessment</h3>
+          <p>
+            You get a read across hydration, oiliness, texture, evenness and
+            redness, in everyday language. Anything that looks like it needs a
+            professional gets pointed to a dermatologist, not assessed.
+          </p>
+        </div>
+        <div class="step">
+          <span class="step__num" aria-hidden="true"></span>
+          <h3>Follow a routine</h3>
+          <p>
+            Matched product suggestions become a morning and evening routine with
+            reminders and check-offs, so you can tell whether it is working.
+          </p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <p>
+          <strong>PristineAI is not a medical device.</strong> It describes what is
+          visible in a photo and suggests over-the-counter products. It does not
+          diagnose conditions and is not a substitute for advice from a doctor or a
+          dermatologist. If you have a concern about your skin, see a professional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="privacy">
+    <div class="container container--wide">
+      <h2>Your photos and data</h2>
+      <div class="prose">
+        <p>
+          Photos of your face are used to generate your assessment and are not kept
+          on our servers. A copy stays on your device only if you turn that on, and
+          it is never uploaded through sync. Your profile picture never leaves your
+          device.
+        </p>
+        <p>
+          Your account and routine data are stored so they can sync across your
+          devices. Product analytics can be switched off in the app&rsquo;s settings.
+          You can delete individual scans, delete all of your data, or delete your
+          account from within the app.
+        </p>
+        <p>
+          The full detail is in the
+          <a href="privacy.html">Privacy Policy</a>, including every service that
+          processes your data and how to exercise your rights.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container container--wide site-footer__inner">
+    <span>&copy; <span id="year">2026</span> {{COMPANY_NAME}}. All rights reserved.</span>
+    <nav aria-label="Footer">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
